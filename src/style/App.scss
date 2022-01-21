@@ -18,9 +18,7 @@ html, body {
 }
 
 .container {
+    height: inherit;
     font-size: 30px;
-    max-width: 20em;
-    min-width: 18em;
-    height: 20em;
 }
 

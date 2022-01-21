@@ -1,19 +1,59 @@
 .card-section {
     display: flex;
     flex-direction: row;
-    height: 10em;
     overflow-y: hidden;
     gap: 1em;
-}
+    padding-bottom: 1em;
+    border-bottom: 5px solid rgb(182, 182, 182);
+    margin: 1em;
+    margin-bottom: 0;
+    font-family: monospace;
 
-.card-img {
-    align-self: flex-end;
-    width: 6em;
-    height: 8em;
-}
+    & > .card-img {
+        align-self: flex-end;
+        width: 6em;
+        height: 9em;
+        border-radius: 10px;
+        object-fit: cover;
+    }
 
-.location-link {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    & > .card-info {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        max-height: 20em;
+
+        & > .location-link-header {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-template-rows: repeat(2, max-content);
+            column-gap: 0.5em;
+            align-items: center;
+            margin-bottom: 1em;
+
+            & > .location {
+                margin-block-start: 0;
+                margin-block-end: 0;
+                font-size: 0.8em;
+            }
+
+            & > .link {
+                font-size: 0.6em;
+                text-decoration: none;
+                color: black;
+            }
+
+            & > .attraction-name{
+                margin-block-start: 0;
+                margin-block-end: 0;
+                grid-column: 1 / 3;
+            }
+        }
+
+        .date, .description {
+            margin-block-start: 0;
+            margin-block-end: 0;
+            font-size: 1rem;
+        }
+    }
 }

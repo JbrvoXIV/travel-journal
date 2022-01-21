@@ -3,19 +3,21 @@ import React from 'react'
 const Card = (props) => {
     return (
         <section className='card-section'>
-            <img src={`../images/${props.imageUrl}`} className='card-img'/>
+            <img src="https://placekitten.com/640/360" className='card-img'/>
             <div className='card-info'>
-                <div className="location-link">
-                    <p>{props.location}</p>
-                    <a href={props.googleMapsUrl} target="_blank" rel="noreferrer">
+                <div className="location-link-header">
+                    <p className="location">{props.location}</p>
+                    <a href={props.googleMapsUrl} target="_blank" rel="noreferrer" className="link">
                         View on Google Maps
                     </a>
+                    <h2 className="attraction-name">{props.title}</h2>
                 </div>
-                <h2 className="attraction-name">{props.title}</h2>
-                <p className="date">
-                    <b>{`${props.startDate} - ${props.endDate}`}</b>
-                </p>
-                <p className="description">{props.description}</p>
+                <div className="date-description">
+                    <p className="date">
+                        <b>{`${props.startDate} - ${props.endDate}`}</b>
+                    </p>
+                    <p className="description">{props.description}</p>
+                </div>
             </div>
         </section>
     )
