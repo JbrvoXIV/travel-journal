@@ -1,0 +1,26 @@
+@import './Navbar.css';
+@import './Card.css';
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+#root {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    font-size: 30px;
+    max-width: 20em;
+    min-width: 18em;
+    height: 20em;
+}
+

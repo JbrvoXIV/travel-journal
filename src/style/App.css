@@ -1,0 +1,32 @@
+@import url(c:\Code\travel-journal\src\style\Navbar.css);
+@import url(c:\Code\travel-journal\src\style\Card.css);
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+#root {
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  font-size: 30px;
+  max-width: 20em;
+  min-width: 18em;
+  height: 20em;
+}
+/*# sourceMappingURL=App.css.map */

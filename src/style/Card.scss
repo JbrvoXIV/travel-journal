@@ -1,0 +1,19 @@
+.card-section {
+    display: flex;
+    flex-direction: row;
+    height: 10em;
+    overflow-y: hidden;
+    gap: 1em;
+}
+
+.card-img {
+    align-self: flex-end;
+    width: 6em;
+    height: 8em;
+}
+
+.location-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

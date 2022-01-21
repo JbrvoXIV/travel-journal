@@ -1,0 +1,12 @@
+.navbar {
+  background-color: #f55a5a;
+  text-align: center;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.navbar > h1 {
+  margin: 0;
+}
+/*# sourceMappingURL=Navbar.css.map */

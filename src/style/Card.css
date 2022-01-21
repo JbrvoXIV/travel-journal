@@ -1,0 +1,33 @@
+.card-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 10em;
+  overflow-y: hidden;
+  gap: 1em;
+}
+
+.card-img {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 6em;
+  height: 8em;
+}
+
+.location-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=Card.css.map */

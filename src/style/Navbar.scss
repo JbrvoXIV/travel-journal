@@ -1,0 +1,12 @@
+$color-tomato: #f55a5a;
+
+.navbar {
+    background-color: $color-tomato;
+    text-align: center;
+    height: max-content;
+
+    & > h1 {
+        margin: 0;
+    }
+}
+
