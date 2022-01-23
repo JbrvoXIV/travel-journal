@@ -6,7 +6,9 @@ const Card = (props) => {
             <img src="https://placekitten.com/640/360" className='card-img'/>
             <div className='card-info'>
                 <div className="location-link-header">
-                    <p className="location">{props.location}</p>
+                    <p className="location">
+                    <i className="fas fa-map-marker-alt"></i>{props.location}
+                    </p>
                     <a href={props.googleMapsUrl} target="_blank" rel="noreferrer" className="link">
                         View on Google Maps
                     </a>

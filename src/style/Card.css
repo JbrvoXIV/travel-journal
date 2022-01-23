@@ -44,9 +44,6 @@
   display: grid;
   -ms-grid-columns: auto 1fr;
       grid-template-columns: auto 1fr;
-  -ms-grid-rows: (max-content)[2];
-      grid-template-rows: repeat(2, -webkit-max-content);
-      grid-template-rows: repeat(2, max-content);
   -webkit-column-gap: 0.5em;
           column-gap: 0.5em;
   -webkit-box-align: center;
@@ -61,6 +58,11 @@
   -webkit-margin-after: 0;
           margin-block-end: 0;
   font-size: 0.8em;
+}
+
+.card-section > .card-info > .location-link-header > .location > i {
+  padding-right: 5px;
+  color: #f55a5a;
 }
 
 .card-section > .card-info > .location-link-header > .link {

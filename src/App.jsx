@@ -14,7 +14,9 @@ const App = () => {
   return (
     <div className='container'>
       <Navbar />
-      {card}
+      <article className="card-container">
+        {card}
+      </article>
     </div>
   );
 }

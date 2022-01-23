@@ -25,6 +25,14 @@ html, body {
 
 .container {
   height: inherit;
+  width: 90%;
   font-size: 30px;
+}
+
+.container > .card-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(600px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
 }
 /*# sourceMappingURL=App.css.map */
