@@ -1,9 +1,19 @@
+/* APP STYLE */
+/* NAVBAR STYLE */
+/* CARD STYLE */
+/* RESPONSIVE */
 .navbar {
   background-color: #f55a5a;
-  text-align: center;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
   border-radius: 0 0 10px 10px;
 }
 

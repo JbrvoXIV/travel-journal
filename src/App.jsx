@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from "./components/Navbar"
 import Card from './components/Card'
+import Footer from "./components/Footer"
 import data from './data'
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
       <article className="card-container">
         {card}
       </article>
+      <Footer />
     </div>
   );
 }

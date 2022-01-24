@@ -1,0 +1,17 @@
+/* APP STYLE */
+/* NAVBAR STYLE */
+/* CARD STYLE */
+/* RESPONSIVE */
+.footer {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 0.7em;
+}
+
+.footer p {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+/*# sourceMappingURL=Footer.css.map */

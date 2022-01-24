@@ -1,17 +1,11 @@
 @import "./variables";
+@import "./mixins";
 
 .navbar {
-    background-color: $color-tomato;
-    text-align: center;
-    height: max-content;
-    border-radius: 0 0 10px 10px;
+    @include navbar;
     
     & > h1 {
-        margin: 0;
-        font-family: monospace;
-        font-size: 1em;
-        word-spacing: -5px;
-        color: white;
+        @include navbarHeader;
 
         & > i {
             padding-right: 10px;

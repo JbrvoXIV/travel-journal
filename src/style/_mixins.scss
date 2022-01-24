@@ -1,0 +1,124 @@
+@mixin marginBlockReset {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+/* APP STYLE */
+
+@mixin resetApp {
+    * {
+        box-sizing: border-box;
+    }
+    
+    html, body {
+        margin: 0;
+        padding: 0;
+        min-height: 100%;
+        min-width: fit-content;
+    }
+    
+    #root {
+        height: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+    
+    ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    }
+    
+    ::-webkit-scrollbar-thumb {
+    background: #888; 
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+    }
+}
+
+/* NAVBAR STYLE */
+
+@mixin navbar {
+    background-color: $color-tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-radius: 0 0 10px 10px;
+}
+
+@mixin navbarHeader {
+    margin: 0;
+    font-family: monospace;
+    font-size: 1em;
+    word-spacing: -5px;
+    color: white;
+}
+
+/* CARD STYLE */
+
+@mixin cardSection {
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    gap: 1em;
+    padding-bottom: 1em;
+    border-bottom: 2px solid $gray-light;
+    margin: 1em;
+    margin-bottom: 0;
+    font-family: 'Inter', monospace;
+}
+
+@mixin cardImg {
+    align-self: flex-end;
+    min-width: 6em;
+    width: 6em;
+    height: 9em;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 3px 3px 5px $gray-medium;
+}
+
+@mixin cardInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-height: 20em;
+}
+
+@mixin locationLinkHeader {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 0.5em;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+@mixin location {
+    @include marginBlockReset();
+    font-size: 0.8em;
+    letter-spacing: 2px;
+    font-size: 0.7em;
+}
+
+@mixin dateDescription {
+    padding: 4px 0;;
+    @include marginBlockReset();
+    font-size: 0.55em;
+    line-height: 1.5;
+}
+
+/* RESPONSIVE */
+
+@mixin responsive {
+    @media screen and (max-width: 610px) {
+        .container {
+            font-size: 25px;
+        }
+    }
+}

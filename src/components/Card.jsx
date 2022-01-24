@@ -1,9 +1,12 @@
 import React from 'react'
 
 const Card = (props) => {
+
+    const image = props.imageUrl;
+
     return (
         <section className='card-section'>
-            <img src="https://placekitten.com/640/360" className='card-img'/>
+            <img src={image} alt="Vacation Spot" className='card-img'/>
             <div className='card-info'>
                 <div className="location-link-header">
                     <p className="location">

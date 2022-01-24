@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACKA,eAAe;AAsCf,kBAAkB;AAmBlB,gBAAgB;AAqDhB,gBAAgB;ADjHhB,AAAA,OAAO,CAAC;EACJ,MAAM,EAAE,MAAM;EACd,UAAU,EAAE,MAAM;EAClB,SAAS,EAAE,KAAK;CAKnB;;AARD,AAKI,OALG,CAKH,CAAC,CAAC;ECNF,kBAAkB,EAAE,CAAC;EACrB,gBAAgB,EAAE,CAAC;CDOlB",
+    "sources": [
+        "Footer.scss",
+        "_mixins.scss"
+    ],
+    "names": [],
+    "file": "Footer.css"
+}

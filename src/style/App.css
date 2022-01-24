@@ -1,5 +1,10 @@
 @import url(c:\Code\travel-journal\src\style\Navbar.css);
 @import url(c:\Code\travel-journal\src\style\Card.css);
+@import url(c:\Code\travel-journal\src\style\Footer.css);
+/* APP STYLE */
+/* NAVBAR STYLE */
+/* CARD STYLE */
+/* RESPONSIVE */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -7,7 +12,11 @@
 
 html, body {
   margin: 0;
-  height: 100%;
+  padding: 0;
+  min-height: 100%;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
 }
 
 #root {
@@ -23,6 +32,22 @@ html, body {
           align-items: center;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 .container {
   height: inherit;
   width: 90%;
@@ -34,5 +59,11 @@ html, body {
   display: grid;
   -ms-grid-columns: (minmax(600px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+}
+
+@media screen and (max-width: 610px) {
+  .container {
+    font-size: 25px;
+  }
 }
 /*# sourceMappingURL=App.css.map */

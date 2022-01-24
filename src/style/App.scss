@@ -1,21 +1,10 @@
 @import './Navbar.css';
 @import './Card.css';
+@import "./Footer.css";
+@import "./variables";
+@import "./mixins";
 
-* {
-    box-sizing: border-box;
-}
-
-html, body {
-    margin: 0;
-    height: 100%;
-}
-
-#root {
-    height: inherit;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+@include resetApp;
 
 .container {
     height: inherit;
@@ -28,3 +17,4 @@ html, body {
     }
 }
 
+@include responsive;

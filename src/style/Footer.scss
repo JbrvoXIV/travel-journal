@@ -1,0 +1,11 @@
+@import "./mixins";
+
+.footer {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 0.7em;
+
+    p {
+        @include marginBlockReset;
+    }
+}
