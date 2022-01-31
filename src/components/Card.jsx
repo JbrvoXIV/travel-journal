@@ -2,10 +2,16 @@ import React from 'react'
 
 const Card = (props) => {
 
-    const image = props.imageUrl;
+    const image = props.imageUrl
+    const { darkMode } = props
+    const onyx = "#353935"
+
+    const styles = {
+        color: darkMode ? "white" : onyx
+    }
 
     return (
-        <section className='card-section'>
+        <section className='card-section' style={styles}>
             <img src={image} alt="Vacation Spot" className='card-img'/>
             <div className='card-info'>
                 <div className="location-link-header">
