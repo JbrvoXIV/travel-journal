@@ -8,6 +8,7 @@
 @mixin resetApp {
     * {
         box-sizing: border-box;
+        overflow-x: hidden;
     }
     
     html, body {
@@ -69,13 +70,14 @@
 @mixin cardSection {
     display: flex;
     flex-direction: row;
-    overflow-y: hidden;
+    overflow: hidden;
     gap: 1em;
     padding-bottom: 1em;
     border-bottom: 2px solid $gray-light;
     margin: 1em;
     margin-bottom: 0;
     font-family: 'Inter', monospace;
+    width: 90%;
 }
 
 @mixin cardImg {
@@ -123,6 +125,13 @@
     @media screen and (max-width: 610px) {
         .container {
             font-size: 25px;
+
+            & > .card-container {
+                
+                & > .card-section {
+                    margin: 10px 5px;
+                }
+            }
         }
     }
 }
