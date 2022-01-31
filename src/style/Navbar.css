@@ -18,7 +18,10 @@
 }
 
 .navbar > h1 {
+<<<<<<< HEAD
   margin: 0 auto;
+=======
+>>>>>>> 55156129f4993a3cc904c59b0848319138022973
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
