@@ -1,6 +1,6 @@
-@import url(c:\VSCode Projects\travel-journal\src\style\Navbar.css);
-@import url(c:\VSCode Projects\travel-journal\src\style\Card.css);
-@import url(c:\VSCode Projects\travel-journal\src\style\Footer.css);
+@import url(c:\Code\travel-journal\src\style\Navbar.css);
+@import url(c:\Code\travel-journal\src\style\Card.css);
+@import url(c:\Code\travel-journal\src\style\Footer.css);
 /* APP STYLE */
 /* NAVBAR STYLE */
 /* CARD STYLE */
@@ -58,8 +58,8 @@ html, body {
 .container > .card-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(500px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  -ms-grid-columns: (minmax(600px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
 }
 
 @media screen and (max-width: 610px) {
