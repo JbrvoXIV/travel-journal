@@ -8,6 +8,7 @@
 @mixin resetApp {
     * {
         box-sizing: border-box;
+        overflow-x: hidden;
     }
     
     html, body {
@@ -53,11 +54,15 @@
 }
 
 @mixin navbarHeader {
-    margin: 0;
-    font-family: monospace;
+    margin: 0 auto;
+    flex: 1;
+    text-align: center;
+    padding-left: 94px;
     font-size: 1em;
     word-spacing: -5px;
     color: white;
+    font-family: monospace;
+    cursor: default;
 }
 
 /* CARD STYLE */
@@ -65,13 +70,14 @@
 @mixin cardSection {
     display: flex;
     flex-direction: row;
-    overflow-y: hidden;
+    overflow: hidden;
     gap: 1em;
     padding-bottom: 1em;
     border-bottom: 2px solid $gray-light;
     margin: 1em;
     margin-bottom: 0;
     font-family: 'Inter', monospace;
+    width: 90%;
 }
 
 @mixin cardImg {
@@ -119,6 +125,13 @@
     @media screen and (max-width: 610px) {
         .container {
             font-size: 25px;
+
+            & > .card-container {
+                
+                & > .card-section {
+                    margin: 10px 5px;
+                }
+            }
         }
     }
 }

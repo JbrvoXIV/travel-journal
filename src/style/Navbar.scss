@@ -11,5 +11,45 @@
             padding-right: 10px;
         }
     }
+
+   & > .light-dark-switch {
+       font-size: 0.4em;
+       width: max-content;
+       margin-right: 10px;
+       display: flex;
+       align-items: center;
+       gap: 5px;
+       font-family: monospace;
+       justify-self: flex-end;
+
+        & > #light {
+            color: $color-onyx;
+        }
+
+        & > #dark {
+            color: white;
+        }
+
+       & > .switch-text {
+           cursor: default;
+       }
+
+       & > .switch {
+           position: relative;
+           width: 2em;
+           height: 1em;
+           background-color: black;
+           border-radius: 10px;
+           cursor: pointer;
+
+           & > .switch-button {
+               position: absolute;
+               background-color: $color-onyx;
+               width: 1em;
+               height: 1em;
+               border-radius: 50%;
+           }
+       }
+   }
 }
 

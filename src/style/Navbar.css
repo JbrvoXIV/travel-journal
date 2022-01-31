@@ -18,14 +18,66 @@
 }
 
 .navbar > h1 {
-  margin: 0;
-  font-family: monospace;
+  margin: 0 auto;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  padding-left: 94px;
   font-size: 1em;
   word-spacing: -5px;
   color: white;
+  font-family: monospace;
+  cursor: default;
 }
 
 .navbar > h1 > i {
   padding-right: 10px;
+}
+
+.navbar > .light-dark-switch {
+  font-size: 0.4em;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  font-family: monospace;
+  justify-self: flex-end;
+}
+
+.navbar > .light-dark-switch > #light {
+  color: #353935;
+}
+
+.navbar > .light-dark-switch > #dark {
+  color: white;
+}
+
+.navbar > .light-dark-switch > .switch-text {
+  cursor: default;
+}
+
+.navbar > .light-dark-switch > .switch {
+  position: relative;
+  width: 2em;
+  height: 1em;
+  background-color: black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.navbar > .light-dark-switch > .switch > .switch-button {
+  position: absolute;
+  background-color: #353935;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
 }
 /*# sourceMappingURL=Navbar.css.map */

@@ -11,13 +11,14 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  overflow-y: hidden;
+  overflow: hidden;
   gap: 1em;
   padding-bottom: 1em;
   border-bottom: 2px solid rgba(128, 128, 128, 0.2);
   margin: 1em;
   margin-bottom: 0;
   font-family: 'Inter', monospace;
+  width: 90%;
 }
 
 .card-section > .card-img {

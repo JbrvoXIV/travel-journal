@@ -8,6 +8,7 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 html, body {
@@ -64,6 +65,9 @@ html, body {
 @media screen and (max-width: 610px) {
   .container {
     font-size: 25px;
+  }
+  .container > .card-container > .card-section {
+    margin: 10px 5px;
   }
 }
 /*# sourceMappingURL=App.css.map */
