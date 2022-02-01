@@ -1,3 +1,7 @@
+/* APP STYLE */
+/* NAVBAR STYLE */
+/* CARD STYLE */
+/* RESPONSIVE */
 .navbar {
   background-color: #f55a5a;
   display: -webkit-box;
@@ -9,12 +13,18 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 50px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  min-height: 50px;
   border-radius: 0 0 10px 10px;
+  overflow-y: hidden;
 }
 
 .navbar > h1 {
   margin: 0 auto;
+  max-height: 100%;
+  overflow-y: inherit;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;

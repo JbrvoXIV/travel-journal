@@ -49,16 +49,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
+    height: max-content;
+    min-height: 50px;
     border-radius: 0 0 10px 10px;
+    overflow-y: hidden;
 }
 
 @mixin navbarHeader {
-<<<<<<< HEAD
     margin: 0 auto;
-=======
-    // margin: 0 auto;
->>>>>>> 55156129f4993a3cc904c59b0848319138022973
+    max-height: 100%;
+    overflow-y: inherit;
     flex: 1;
     text-align: center;
     padding-left: 94px;
